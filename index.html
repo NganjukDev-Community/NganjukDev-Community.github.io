@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NganjukDev Community - Komunitas Developer Nganjuk</title>
+        <meta
+            name="description"
+            content="NganjukDev Community - Komunitas Developer dan Technology Enthusiast di Nganjuk"
+        />
+        <meta
+            name="keywords"
+            content="developer, nganjuk, community, programming, technology"
+        />
+
+        <!-- Library CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>"
+        />
+
+        <!-- Custom Style & Script -->
+        <script src="js/tailwind.config.js"></script>
+        <script src="js/emailjs-config.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body class="bg-white text-gray-800">
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 right-0 z-50 glass-effect shadow-lg">
+            <div class="container mx-auto px-8 sm:px-12 lg:px-20">
+                <div class="flex justify-between items-center h-16">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <h1 class="text-xl font-bold gradient-text">
+                                NganjukDev
+                            </h1>
+                            <p class="text-xs text-gray-600">Community</p>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a
+                                href="#home"
+                                class="text-gray-700 hover:text-primary-blue px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                                >Home</a
+                            >
+                            <a
+                                href="#about"
+                                class="text-gray-700 hover:text-primary-blue px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                                >About Us</a
+                            >
+                            <a
+                                href="#activities"
+                                class="text-gray-700 hover:text-primary-blue px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                                >Activities</a
+                            >
+                            <a
+                                href="#technology"
+                                class="text-gray-700 hover:text-primary-blue px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                                >Technology</a
+                            >
+                            <a
+                                href="#team"
+                                class="text-gray-700 hover:text-primary-blue px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                                >Team</a
+                            >
+                            <a
+                                href="#contact"
+                                class="text-gray-700 hover:text-primary-blue px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                                >Contact</a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                        <button
+                            type="button"
+                            id="mobile-menu-button"
+                            class="text-gray-700 hover:text-primary-blue focus:outline-none focus:text-primary-blue"
+                        >
+                            <i class="fas fa-bars text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
+                    <a
+                        href="#home"
+                        class="text-gray-700 hover:text-primary-blue block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                        >Home</a
+                    >
+                    <a
+                        href="#about"
+                        class="text-gray-700 hover:text-primary-blue block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                        >About Us</a
+                    >
+                    <a
+                        href="#activities"
+                        class="text-gray-700 hover:text-primary-blue block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                        >Activities</a
+                    >
+                    <a
+                        href="#technology"
+                        class="text-gray-700 hover:text-primary-blue block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                        >Technology</a
+                    >
+                    <a
+                        href="#team"
+                        class="text-gray-700 hover:text-primary-blue block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                        >Team</a
+                    >
+                    <a
+                        href="#contact"
+                        class="text-gray-700 hover:text-primary-blue block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                        >Contact</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section
+            id="home"
+            class="relative min-h-screen flex items-center justify-center morph-gradient"
+        >
+            <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+            <div
+                class="relative z-10 text-center text-white px-8 sm:px-12 lg:px-20"
+            >
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+                    Welcome to <span class="text-yellow-300">NganjukDev</span>
+                </h1>
+                <p class="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto">
+                    Komunitas Developer dan Technology Enthusiast di Nganjuk
+                </p>
+                <div class="space-x-4">
+                    <a
+                        href="#about"
+                        class="inline-block bg-white text-primary-blue px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+                    >
+                        Learn More
+                    </a>
+                    <a
+                        href="#contact"
+                        class="inline-block border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary-blue transition-colors"
+                    >
+                        Join Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div
+                class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce"
+            >
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-8 sm:px-12 lg:px-20">
+                <div class="text-center mb-16">
+                    <h2
+                        class="text-3xl sm:text-4xl font-bold gradient-text mb-4"
+                    >
+                        About NganjukDev Community
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Kami adalah komunitas developer dan technology
+                        enthusiast yang berkomitmen untuk mengembangkan
+                        ekosistem teknologi di Nganjuk
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            Visi Kami
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Menjadi wadah utama bagi para developer dan
+                            technology enthusiast di Nganjuk untuk berkembang,
+                            berbagi pengetahuan, dan berkontribusi dalam
+                            memajukan teknologi di daerah.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            Misi Kami
+                        </h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i
+                                    class="fas fa-check-circle text-primary-green mr-3 mt-1"
+                                ></i>
+                                <span
+                                    >Memfasilitasi pembelajaran dan pengembangan
+                                    skill teknologi</span
+                                >
+                            </li>
+                            <li class="flex items-start">
+                                <i
+                                    class="fas fa-check-circle text-primary-green mr-3 mt-1"
+                                ></i>
+                                <span
+                                    >Membangun jaringan profesional yang
+                                    kuat</span
+                                >
+                            </li>
+                            <li class="flex items-start">
+                                <i
+                                    class="fas fa-check-circle text-primary-green mr-3 mt-1"
+                                ></i>
+                                <span
+                                    >Berkontribusi pada kemajuan teknologi
+                                    lokal</span
+                                >
+                            </li>
+                            <li class="flex items-start">
+                                <i
+                                    class="fas fa-check-circle text-primary-green mr-3 mt-1"
+                                ></i>
+                                <span
+                                    >Menciptakan inovasi yang bermanfaat bagi
+                                    masyarakat</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="relative">
+                        <div
+                            class="bg-gradient-morph-light rounded-lg text-center"
+                        >
+                            <div class="grid grid-cols-2">
+                                <div class="text-center py-10">
+                                    <div
+                                        class="text-3xl font-bold gradient-text"
+                                    >
+                                        50+
+                                    </div>
+                                    <div class="text-gray-600">Members</div>
+                                </div>
+                                <div class="text-center py-10">
+                                    <div
+                                        class="text-3xl font-bold gradient-text"
+                                    >
+                                        25+
+                                    </div>
+                                    <div class="text-gray-600">Events</div>
+                                </div>
+                                <div class="text-center py-10">
+                                    <div
+                                        class="text-3xl font-bold gradient-text"
+                                    >
+                                        10+
+                                    </div>
+                                    <div class="text-gray-600">Projects</div>
+                                </div>
+                                <div class="text-center py-10">
+                                    <div
+                                        class="text-3xl font-bold gradient-text"
+                                    >
+                                        3+
+                                    </div>
+                                    <div class="text-gray-600">Years</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Activities Section -->
+        <section id="activities" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-8 sm:px-12 lg:px-20">
+                <div class="text-center mb-16">
+                    <h2
+                        class="text-3xl sm:text-4xl font-bold gradient-text mb-4"
+                    >
+                        Our Activities
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Berbagai kegiatan yang kami lakukan untuk mengembangkan
+                        komunitas dan meningkatkan skill teknologi
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Activity Card 1 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                    >
+                        <div
+                            class="h-48 bg-gradient-morph flex items-center justify-center"
+                        >
+                            <i
+                                class="fas fa-chalkboard-teacher text-4xl text-white"
+                            ></i>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-semibold mb-3 text-gray-800"
+                            >
+                                Workshop & Training
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Pelatihan teknologi terbaru seperti web
+                                development, mobile app, dan emerging
+                                technologies
+                            </p>
+                            <div class="flex items-center text-primary-blue">
+                                <i class="fas fa-calendar mr-2"></i>
+                                <span class="text-sm">Setiap bulan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Card 2 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                    >
+                        <div
+                            class="h-48 bg-gradient-morph flex items-center justify-center"
+                        >
+                            <i class="fas fa-users text-4xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-semibold mb-3 text-gray-800"
+                            >
+                                Meetup & Networking
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Pertemuan rutin untuk berbagi pengalaman,
+                                diskusi teknologi, dan membangun jaringan
+                                profesional
+                            </p>
+                            <div class="flex items-center text-primary-blue">
+                                <i class="fas fa-calendar mr-2"></i>
+                                <span class="text-sm">Setiap 2 minggu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Card 3 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                    >
+                        <div
+                            class="h-48 bg-gradient-morph flex items-center justify-center"
+                        >
+                            <i class="fas fa-code text-4xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-semibold mb-3 text-gray-800"
+                            >
+                                Hackathon
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Kompetisi pengembangan aplikasi untuk
+                                menyelesaikan masalah nyata di masyarakat
+                            </p>
+                            <div class="flex items-center text-primary-blue">
+                                <i class="fas fa-calendar mr-2"></i>
+                                <span class="text-sm">Setiap 6 bulan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Card 4 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                    >
+                        <div
+                            class="h-48 bg-gradient-morph flex items-center justify-center"
+                        >
+                            <i
+                                class="fas fa-hands-helping text-4xl text-white"
+                            ></i>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-semibold mb-3 text-gray-800"
+                            >
+                                Community Projects
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Proyek kolaboratif untuk mengembangkan solusi
+                                teknologi yang bermanfaat bagi masyarakat
+                            </p>
+                            <div class="flex items-center text-primary-blue">
+                                <i class="fas fa-calendar mr-2"></i>
+                                <span class="text-sm">Ongoing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Card 5 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                    >
+                        <div
+                            class="h-48 bg-gradient-morph flex items-center justify-center"
+                        >
+                            <i
+                                class="fas fa-graduation-cap text-4xl text-white"
+                            ></i>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-semibold mb-3 text-gray-800"
+                            >
+                                Mentoring Program
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Program bimbingan untuk member baru yang ingin
+                                mengembangkan karir di bidang teknologi
+                            </p>
+                            <div class="flex items-center text-primary-blue">
+                                <i class="fas fa-calendar mr-2"></i>
+                                <span class="text-sm">Ongoing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Card 6 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                    >
+                        <div
+                            class="h-48 bg-gradient-morph flex items-center justify-center"
+                        >
+                            <i class="fas fa-share-alt text-4xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-semibold mb-3 text-gray-800"
+                            >
+                                Knowledge Sharing
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Sesi berbagi pengetahuan tentang teknologi
+                                terbaru, best practices, dan pengalaman industri
+                            </p>
+                            <div class="flex items-center text-primary-blue">
+                                <i class="fas fa-calendar mr-2"></i>
+                                <span class="text-sm">Setiap minggu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Enthusiast Section -->
+        <section id="technology" class="py-20 bg-white">
+            <div class="container mx-auto px-8 sm:px-12 lg:px-20">
+                <div class="text-center mb-16">
+                    <h2
+                        class="text-3xl sm:text-4xl font-bold gradient-text mb-4"
+                    >
+                        Technology Enthusiast
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Teknologi yang menjadi fokus pengembangan dan
+                        pembelajaran dalam komunitas kami
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Frontend Technologies -->
+                    <div
+                        class="text-center p-6 rounded-lg border-2 border-gray-100 hover:border-primary-blue transition-colors hover:shadow-lg"
+                    >
+                        <div
+                            class="w-16 h-16 bg-gradient-morph rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <i class="fab fa-react text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Frontend</h3>
+                        <p class="text-gray-600 text-sm">
+                            React, Vue.js, Angular, HTML5, CSS3, JavaScript
+                        </p>
+                    </div>
+
+                    <!-- Backend Technologies -->
+                    <div
+                        class="text-center p-6 rounded-lg border-2 border-gray-100 hover:border-primary-blue transition-colors hover:shadow-lg"
+                    >
+                        <div
+                            class="w-16 h-16 bg-gradient-morph rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <i class="fas fa-server text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Backend</h3>
+                        <p class="text-gray-600 text-sm">
+                            Node.js, PHP, Python, Java, .NET
+                        </p>
+                    </div>
+
+                    <!-- Mobile Development -->
+                    <div
+                        class="text-center p-6 rounded-lg border-2 border-gray-100 hover:border-primary-blue transition-colors hover:shadow-lg"
+                    >
+                        <div
+                            class="w-16 h-16 bg-gradient-morph rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <i
+                                class="fas fa-mobile-alt text-2xl text-white"
+                            ></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Mobile</h3>
+                        <p class="text-gray-600 text-sm">
+                            React Native, Flutter, Android, iOS
+                        </p>
+                    </div>
+
+                    <!-- Database -->
+                    <div
+                        class="text-center p-6 rounded-lg border-2 border-gray-100 hover:border-primary-blue transition-colors hover:shadow-lg"
+                    >
+                        <div
+                            class="w-16 h-16 bg-gradient-morph rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <i class="fas fa-database text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Database</h3>
+                        <p class="text-gray-600 text-sm">
+                            MySQL, PostgreSQL, MongoDB, Firebase
+                        </p>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div
+                        class="text-center p-6 rounded-lg border-2 border-gray-100 hover:border-primary-blue transition-colors hover:shadow-lg"
+                    >
+                        <div
+                            class="w-16 h-16 bg-gradient-morph rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <i class="fas fa-cloud text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Cloud & DevOps
+                        </h3>
+                        <p class="text-gray-600 text-sm">
+                            AWS, Google Cloud, Docker, Kubernetes
+                        </p>
+                    </div>
+
+                    <!-- AI & Machine Learning -->
+                    <div
+                        class="text-center p-6 rounded-lg border-2 border-gray-100 hover:border-primary-blue transition-colors hover:shadow-lg"
+                    >
+                        <div
+                            class="w-16 h-16 bg-gradient-morph rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <i class="fas fa-brain text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">AI & ML</h3>
+                        <p class="text-gray-600 text-sm">
+                            TensorFlow, PyTorch, Scikit-learn
+                        </p>
+                    </div>
+
+                    <!-- UI/UX -->
+                    <div
+                        class="text-center p-6 rounded-lg border-2 border-gray-100 hover:border-primary-blue transition-colors hover:shadow-lg"
+                    >
+                        <div
+                            class="w-16 h-16 bg-gradient-morph rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <i
+                                class="fas fa-pencil-ruler text-2xl text-white"
+                            ></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">UI/UX</h3>
+                        <p class="text-gray-600 text-sm">
+                            Figma, Adobe XD, Sketch
+                        </p>
+                    </div>
+
+                    <!-- IoT -->
+                    <div
+                        class="text-center p-6 rounded-lg border-2 border-gray-100 hover:border-primary-blue transition-colors hover:shadow-lg"
+                    >
+                        <div
+                            class="w-16 h-16 bg-gradient-morph rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <i class="fas fa-microchip text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">IoT</h3>
+                        <p class="text-gray-600 text-sm">
+                            Arduino, Raspberry Pi, ESP32
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section id="team" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-8 sm:px-12 lg:px-20">
+                <div class="text-center mb-16">
+                    <h2
+                        class="text-3xl sm:text-4xl font-bold gradient-text mb-4"
+                    >
+                        Our Team
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Tim inti yang memimpin dan mengkoordinasi berbagai
+                        kegiatan dalam NganjukDev Community
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Team Member 1 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow text-center"
+                    >
+                        <div
+                            class="h-48 bg-gradient-morph flex items-center justify-center p-4"
+                        >
+                            <img
+                                src="img/sabil.png"
+                                alt="Sabil Ahmad"
+                                class="w-32 h-32 object-cover rounded-full border-4 border-white shadow-lg"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Sabil Ahmad
+                            </h3>
+                            <p class="text-primary-blue font-medium mb-3">
+                                Community Leader
+                            </p>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Back End Developer & Cloud Enthusiast
+                            </p>
+                            <div class="flex justify-center space-x-3">
+                                <a
+                                    href="https://www.linkedin.com/in/sabil-ahmad-hidayat/"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/meinhere/"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/sabil_ahmad11/"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow text-center"
+                    >
+                        <div
+                            class="h-48 bg-gradient-morph flex items-center justify-center p-4"
+                        >
+                            <img
+                                src="img/bintang.png"
+                                alt="Bintang Widya"
+                                class="w-32 h-32 object-cover rounded-full border-4 border-white shadow-lg"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Bintang Widya
+                            </h3>
+                            <p class="text-primary-blue font-medium mb-3">
+                                Event Coordinator
+                            </p>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Product Manager & Event Organizer
+                            </p>
+                            <div class="flex justify-center space-x-3">
+                                <a
+                                    href="#"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/7stars993"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/bintang.wn/"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow text-center"
+                    >
+                        <div
+                            class="h-48 bg-gradient-morph flex items-center justify-center p-4"
+                        >
+                            <img
+                                src="img/sovia.png"
+                                alt="Sovia Wahyuningtyas"
+                                class="w-32 h-32 object-cover rounded-full border-4 border-white shadow-lg"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Sovia Wahyuningtyas
+                            </h3>
+                            <p class="text-primary-blue font-medium mb-3">
+                                Tech Leader
+                            </p>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Data Analyst & AI Enthusiast
+                            </p>
+                            <div class="flex justify-center space-x-3">
+                                <a
+                                    href="https://www.linkedin.com/in/soviawahyuningtyas/"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/soviaawahyuningtyas"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/soviaa_whyuningtyas"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 4 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow text-center"
+                    >
+                        <div
+                            class="h-48 bg-gradient-morph flex items-center justify-center p-4"
+                        >
+                            <div
+                                class="w-32 h-32 bg-white rounded-full flex items-center justify-center border-4 border-white shadow-lg"
+                            >
+                                <i
+                                    class="fas fa-user text-4xl text-gray-600"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Zulfa Laila
+                            </h3>
+                            <p class="text-primary-blue font-medium mb-3">
+                                Media & Content Coordinator
+                            </p>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Content Creator & Social Media Specialist
+                            </p>
+                            <div class="flex justify-center space-x-3">
+                                <a
+                                    href="https://www.linkedin.com/in/zulfa-lailatul-mu-achirin-b5831b2a5/"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/zulfalaila"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/zulfalaila_m/"
+                                    class="text-gray-400 hover:text-primary-blue transition-colors"
+                                >
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-8 sm:px-12 lg:px-20">
+                <div class="text-center mb-16">
+                    <h2
+                        class="text-3xl sm:text-4xl font-bold gradient-text mb-4"
+                    >
+                        Contact Us
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Bergabunglah dengan kami atau hubungi untuk informasi
+                        lebih lanjut
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Contact Information -->
+                    <div class="space-y-8 py-8">
+                        <div>
+                            <h3
+                                class="text-2xl font-semibold mb-6 text-gray-800"
+                            >
+                                Get in Touch
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 bg-gradient-morph rounded-lg flex items-center justify-center mr-4"
+                                    >
+                                        <i
+                                            class="fas fa-map-marker-alt text-white"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">
+                                            Address
+                                        </h4>
+                                        <p class="text-gray-600">
+                                            Nganjuk, Jawa Timur, Indonesia
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 bg-gradient-morph rounded-lg flex items-center justify-center mr-4"
+                                    >
+                                        <i
+                                            class="fas fa-envelope text-white"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">
+                                            Email
+                                        </h4>
+                                        <p class="text-gray-600">
+                                            nganjukdev.idn@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 bg-gradient-morph rounded-lg flex items-center justify-center mr-4"
+                                    >
+                                        <i class="fas fa-phone text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">
+                                            Phone
+                                        </h4>
+                                        <p class="text-gray-600">
+                                            +62 878 6436 5113
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div>
+                            <h3
+                                class="text-xl font-semibold mb-4 text-gray-800"
+                            >
+                                Follow Us
+                            </h3>
+                            <div class="flex space-x-4">
+                                <a
+                                    href="#"
+                                    class="w-12 h-12 bg-gradient-morph rounded-lg flex items-center justify-center text-white hover:opacity-90 transition-opacity"
+                                >
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="w-12 h-12 bg-gradient-morph rounded-lg flex items-center justify-center text-white hover:opacity-90 transition-opacity"
+                                >
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="w-12 h-12 bg-gradient-morph rounded-lg flex items-center justify-center text-white hover:opacity-90 transition-opacity"
+                                >
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/company/nganjukdev"
+                                    class="w-12 h-12 bg-gradient-morph rounded-lg flex items-center justify-center text-white hover:opacity-90 transition-opacity"
+                                >
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/NganjukDev-Community"
+                                    class="w-12 h-12 bg-gradient-morph rounded-lg flex items-center justify-center text-white hover:opacity-90 transition-opacity"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="bg-gray-50 rounded-lg p-8 border">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">
+                            Send us a Message
+                        </h3>
+
+                        <!-- Success Message -->
+                        <div
+                            id="success-message"
+                            class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-6"
+                        >
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle mr-2"></i>
+                                <span
+                                    >Pesan berhasil dikirim! Kami akan segera
+                                    menghubungi Anda.</span
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div
+                            id="error-message"
+                            class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-6"
+                        >
+                            <div class="flex items-center">
+                                <i class="fas fa-exclamation-circle mr-2"></i>
+                                <span id="error-text"
+                                    >Terjadi kesalahan saat mengirim pesan.
+                                    Silakan coba lagi.</span
+                                >
+                            </div>
+                        </div>
+
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label
+                                        for="firstName"
+                                        class="block text-sm font-medium text-gray-700 mb-2"
+                                        >First Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="firstName"
+                                        name="from_name"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label
+                                        for="lastName"
+                                        class="block text-sm font-medium text-gray-700 mb-2"
+                                        >Last Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="lastName"
+                                        name="last_name"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent"
+                                        required
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label
+                                    for="email"
+                                    class="block text-sm font-medium text-gray-700 mb-2"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="from_email"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent"
+                                    required
+                                />
+                            </div>
+
+                            <div>
+                                <label
+                                    for="subject"
+                                    class="block text-sm font-medium text-gray-700 mb-2"
+                                    >Subject</label
+                                >
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent"
+                                    required
+                                />
+                            </div>
+
+                            <div>
+                                <label
+                                    for="message"
+                                    class="block text-sm font-medium text-gray-700 mb-2"
+                                    >Message</label
+                                >
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent resize-none"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                id="submit-btn"
+                                class="w-full bg-gradient-morph text-white py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+                            >
+                                <span id="btn-text">Send Message</span>
+                                <span id="btn-loading" class="hidden">
+                                    <i class="fas fa-spinner fa-spin mr-2"></i>
+                                    Sending...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-8 sm:px-12 lg:px-20">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <!-- Company Info -->
+                    <div class="col-span-2 md:col-span-1">
+                        <h3 class="text-xl font-bold gradient-text mb-4">
+                            NganjukDev Community
+                        </h3>
+                        <p class="text-gray-400 mb-4">
+                            Membangun ekosistem teknologi yang kuat di Nganjuk
+                            melalui kolaborasi, pembelajaran, dan inovasi.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a
+                                href="#"
+                                class="text-gray-400 hover:text-white transition-colors"
+                            >
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a
+                                href="#"
+                                class="text-gray-400 hover:text-white transition-colors"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a
+                                href="#"
+                                class="text-gray-400 hover:text-white transition-colors"
+                            >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/company/nganjukdev"
+                                class="text-gray-400 hover:text-white transition-colors"
+                            >
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a
+                                href="https://github.com/NganjukDev-Community"
+                                class="text-gray-400 hover:text-white transition-colors"
+                            >
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#about"
+                                    class="text-gray-400 hover:text-white transition-colors"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#activities"
+                                    class="text-gray-400 hover:text-white transition-colors"
+                                    >Activities</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#technology"
+                                    class="text-gray-400 hover:text-white transition-colors"
+                                    >Technology</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#team"
+                                    class="text-gray-400 hover:text-white transition-colors"
+                                    >Team</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#contact"
+                                    class="text-gray-400 hover:text-white transition-colors"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Activities -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Activities</h4>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-400 hover:text-white transition-colors"
+                                    >Workshop</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-400 hover:text-white transition-colors"
+                                    >Meetup</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-400 hover:text-white transition-colors"
+                                    >Hackathon</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-400 hover:text-white transition-colors"
+                                    >Projects</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-400 hover:text-white transition-colors"
+                                    >Mentoring</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                        <div class="space-y-2 text-gray-400">
+                            <p>
+                                <i class="fas fa-map-marker-alt mr-2"></i
+                                >Nganjuk, Jawa Timur
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope mr-2"></i
+                                >nganjukdev.idn@gmail.com
+                            </p>
+                            <p>
+                                <i class="fas fa-phone mr-2"></i>+62 878 6436
+                                5113
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+                >
+                    <p>
+                        &copy; 2025 NganjukDev Community. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
